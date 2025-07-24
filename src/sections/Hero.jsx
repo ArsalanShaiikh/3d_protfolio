@@ -11,30 +11,31 @@ import Loader from "../components/Loader";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    
-      <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space 
-" id="home">
-        <HeroText />
-        <ParallaxBackground />
-        <figure
-          className="absolute inset-0"
-          style={{ width: "100vw", height: "100vh" }}
-        >
-          <Canvas camera={{ position: [0, 1, 3] }}>
-            <Suspense fallback={<Loader />}>
+    <section
+      className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space 
+"
+      id="home"
+    >
+      <HeroText />
+      <ParallaxBackground />
+      <figure
+        className="absolute inset-0"
+        style={{ width: "100vw", height: "100vh" }}
+      >
+        <Canvas camera={{ position: [0, 1, 3] }}>
+          <Suspense fallback={<Loader />}>
             <Float>
               <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
+                scale={isMobile ? 0.23 : 0.3}
+                position={isMobile ? [0, -1.5, 0] : [1.3, -1, 0]}
               />
             </Float>
-            <OrbitControls enableZoom={false} />
+            {!isMobile && <OrbitControls enableZoom={false} />}
             <Rig />
-            </Suspense>
-          </Canvas>
-        </figure>
-      </section>
-    
+          </Suspense>
+        </Canvas>
+      </figure>
+    </section>
   );
 };
 

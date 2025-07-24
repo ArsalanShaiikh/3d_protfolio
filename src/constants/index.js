@@ -74,43 +74,46 @@ export const myProjects = [
       },
     ],
   },
-//   {
-//     id: 3,
-//     title: "Blazor Web App",
-//     description:
-//       "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-//     subDescription: [
-//       "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-//       "Implemented API interactions using .NET Core for a robust backend.",
-//       "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-//       "Integrated SQLite for efficient client-side database storage.",
-//     ],
-//     href: "",
-//     logo: "",
-//     image: "/assets/projects/blazor-app.jpg",
-//     tags: [
-//       {
-//         id: 1,
-//         name: "Blazor",
-//         path: "/assets/logos/blazor.svg",
-//       },
-//       {
-//         id: 2,
-//         name: ".NET Core",
-//         path: "/assets/logos/dotnetcore.svg",
-//       },
-//       {
-//         id: 3,
-//         name: "SQLite",
-//         path: "/assets/logos/sqlite.svg",
-//       },
-//       {
-//         id: 4,
-//         name: "TailwindCSS",
-//         path: "/assets/logos/tailwindcss.svg",
-//       },
-//     ],
-//   },
+//  
+ {
+  id: 3,
+  title: "Corporate Business Website",
+  description:
+    "A professional and responsive business website designed for service-based companies with a clean and modern layout.",
+  subDescription: [
+    "Crafted a multi-section landing page with responsive design using HTML, CSS, and Bootstrap.",
+    "Built service highlights, client testimonials, pricing plans, and FAQ sections for maximum engagement.",
+    "Implemented animated counters, smooth scroll, and contact form UI for a polished experience.",
+    "Optimized layout for mobile, tablet, and desktop with cross-browser compatibility.",
+  ],
+  href: "https://presentoooo.netlify.app/",
+  logo: "",
+  image: "/assets/projects/corporate-site.png", // Replace with your actual screenshot
+  tags: [
+    {
+      id: 1,
+      name: "HTML5",
+      path: "/assets/logos/html5.svg",
+    },
+    {
+      id: 2,
+      name: "CSS3",
+      path: "/assets/logos/css3.svg",
+    },
+    {
+      id: 3,
+      name: "Bootstrap",
+      path: "/assets/logos/bootstrap-4.svg",
+    },
+    {
+      id: 4,
+      name: "JavaScript",
+      path: "/assets/logos/javascript.svg",
+    },
+  ],
+}
+
+
 //   {
 //     id: 4,
 //     title: "C++ Game Engine",
